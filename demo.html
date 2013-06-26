@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+	  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<!-- All text on this page is property of Aberger / Sartin-Tarm. (c) 2013. -->
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html charset=utf-8'/>
+    <title>WebGL Demo</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'/>
+    <link rel='icon' type='image/x-icon' href='./favicon.ico'/>
+    <script src='applet.js' type='text/javascript'></script>
+
+    <canvas id="textureCanvas" style="display:none;">
+      I'm sorry your browser does not support the HTML5 canvas element.
+    </canvas>
+  </head>
+
+  <body>
+    <div id='wrap'>
+      <div id='header'>
+        <div class='one_third'>Work</div>
+        <div class='one_third'>In</div>
+        <div class='one_third'>Progress</div>
+      </div>
+
+      <div class="padDiv"> 
+        <div class='main'>
+          <div class="title" id="title2">            
+	    <table style="width:100%;">
+	      <u>Case Studies</u>
+	      <thead><tr>
+		  <th><button onmouseover="case_describe(1)" 
+			      onclick="case_load(1)">Case 1</button></th>
+		  <th><button onmouseover="case_describe(2)" 
+			      onclick="case_load(2)">Case 2</button></th>
+		  <th><button onmouseover="case_describe(3)" 
+			      onclick="case_load(3)">Case 3</button></th>
+		  <th><button onmouseover="case_describe(4)" 
+			      onclick="case_load(4)">Case 4</button></th>
+	      </tr></thead>
+	    </table>
+            <div id="case_description">
+	      <h3 id="case_title"></h3>
+	      <p id="case_describe" style="font-size:20px;"></p>
+	    </div>
+            <div id="case_content"></div>       
+          </div>
+	</div>
+      </div>
+    </div>
+      
+</div>
+</body>
+</html>
