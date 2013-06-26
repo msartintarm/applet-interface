@@ -4,24 +4,24 @@ function hardware_describe(hardware_num) {
 
     if(hardware_loaded === true) return;
 
-    var hw_title = document.getElementById("hardware_title");
+	//    var hw_title = document.getElementById("hardware_title");
     var hw_describe = document.getElementById("hardware_describe");
     switch(hardware_num) {
     case 1:
-	hw_title.innerHTML = "Simple Architecture";
+	hardware_title.innerHTML = "Simple Architecture";
 	hw_describe.innerHTML = "\
 A spatial architecture that demonstrates a general set of spatial mapping responsibilities.";
 	break;
     case 2:
-	hw_title.innerHTML = "DySER Architecture";
+	hardware_title.innerHTML = "DySER Architecture";
 	hw_describe.innerHTML = "An accelerator.";
 	break;
     case 3:
-	hw_title.innerHTML = "PLUG Architecture";
+	hardware_title.innerHTML = "PLUG Architecture";
 	hw_describe.innerHTML = "A weird architecture.";
 	break;
     case 4:
-	hw_title.innerHTML = "TRIPS Architecture";
+	hardware_title.innerHTML = "TRIPS Architecture";
 	hw_describe.innerHTML = "An intended general-purpose architecture.";
 	break;
     default: break;
@@ -47,7 +47,7 @@ function hardware_load(hardware_num) {
 
     var hw_title = document.getElementById("hardware_title");
     var hw_describe = document.getElementById("hardware_describe");
-    var upload_file = document.getElementById("upload_file");
+	//    var upload_file = document.getElementById("upload_file");
     switch(hardware_num) {
     case 1:
 	hw_files.innerHTML="Two hardware graphs.<br/>\
@@ -61,7 +61,7 @@ function hardware_load(hardware_num) {
   <option value='simpleCFG.gms' selected>simpleCFG.gms</option>\
   <option value='simpleCFG2.gms'>simpleCFG2.gms</option>\
   <option value='simpleCFG3.gms'>simpleCFG3.gms</option>\
-  <option id='own_cfg' value='ownCFG.gms' disabled> Own CFG</option>\
+  <option id='own_cfg' value='ownCFG.gms' disabled> -- uploaded CFG -- </option>\
 </select><br/>\
 <button>View raw file.</button>";
 	upload_file.innerHTML="Or, specify an input DAG.<br/>\
